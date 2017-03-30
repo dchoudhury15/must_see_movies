@@ -14,6 +14,11 @@
   </div>
 
 <div class="form-group">
+    <%= f.label :test_cont, "Test contains" %>
+    <%= f.text_field :test_cont, :class => "form-control", :placeholder => "Test contains" %>
+  </div>
+
+<div class="form-group">
     <%= f.label :dob_cont, "Dob contains" %>
     <%= f.text_field :dob_cont, :class => "form-control", :placeholder => "Dob contains" %>
   </div>
@@ -85,6 +90,7 @@
         <th>Name</th>
         <th>Dob</th>
         <th>Image</th>
+        <th>Test</th>
         <th>Actions</th>
       </tr>
 
@@ -93,6 +99,7 @@
         <td><%= actor.name %></td>
         <td><%= actor.dob %></td>
         <td><img src='<%= actor.image %>' class='img-responsive'></td>
+        <td><%= actor.test %></td>
         <td>
           <a href="/actors/<%= actor.id %>" class="btn btn-primary">Show</a>
           <a href="/actors/<%= actor.id %>/edit" class="btn btn-warning">Edit</a>

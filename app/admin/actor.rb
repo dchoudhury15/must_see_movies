@@ -1,6 +1,6 @@
 ActiveAdmin.register Actor do
 
- permit_params :name, :dob, :image
+ permit_params :name, :dob, :image, :test
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
