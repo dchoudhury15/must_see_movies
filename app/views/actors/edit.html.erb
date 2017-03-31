@@ -46,6 +46,15 @@
         <input type="file" id="image" name="image" class="form-control">
       </div>
 
+      <!-- Label and input for test -->
+      <div class="form-group">
+        <label for="test" class="control-label">
+          Test
+        </label>
+
+        <input type="text" id="test" name="test" placeholder="Test" class="form-control" value="<%= @actor.test %>">
+      </div>
+
       <button class="btn btn-warning">
         Update Actor
       </button>

@@ -25,6 +25,7 @@ class ActorsController < ApplicationController
     @actor.name = params[:name]
     @actor.dob = params[:dob]
     @actor.image = params[:image]
+    @actor.test = params[:test]
 
     save_status = @actor.save
 
@@ -54,6 +55,7 @@ class ActorsController < ApplicationController
     @actor.name = params[:name]
     @actor.dob = params[:dob]
     @actor.image = params[:image]
+    @actor.test = params[:test]
 
     save_status = @actor.save
 
